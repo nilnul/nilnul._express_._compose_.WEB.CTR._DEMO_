@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Register Assembly="nilnul._express_._compose_.WEB._CTR_" Namespace="nilnul._express_._compose_.WEB._CTR_._all.js.typed" TagPrefix="cc1" %>
+
+<%@ Register Assembly="nilnul.web._js_.WEB._CTR_" Namespace="nilnul.web._js_.WEB._CTR_.scripts_" TagPrefix="cc6" %>
+
+<%@ Register Assembly="nilnul.web._css_.WEB._CTR_" Namespace="nilnul.web._css_.WEB._CTR_.style_" TagPrefix="cc2" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<%--<title>
+		<uc1:Title runat="server" ID="Title" />
+	</title>--%>
+	<%-- The HtmlHead control checks to see if it contains a child title control. When it doesn’t find one, it renders an empty one. However, it doesn’t look within the content placeholders defined within it to see if they’ve rendered a title tag.--%>
+	<title>
+		<asp:ContentPlaceHolder ID="titleContent" runat="server" />
+	</title>
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<cc2:style__Default ID="Style__Default1" runat="server" />
+	<cc6:scripts__JqPolyNn ID="Scripts__JqPolyNn2" runat="server" />
+
+	<cc1:_all_js_typed_ScriptSrc ID="_all_js_typed_ScriptSrc1" runat="server" />
+	<%--	<cc4:scripts__JqPolyNn ID="Scripts__JqPolyNn1" runat="server" />--%>
+	<%--	<cc4:MathJaxCdnOrLocal ID="MathJaxCdnOrLocal1" runat="server" />--%>
+
+	<% #if (false) %>
+	<script src="http://localhost:12345/_apps/script/jquery.js">
+
+	</script>
+
+	<script src="http://localhost:12345/_apps/nilnul.js/jQuery/js/jquery-1.9.0.js">
+
+	</script>
+	<script src="http://localhost:12345/_apps/script/jQuery/js/jquery-ui-1.10.0.custom.min.js">
+
+	</script>
+
+	<script src="http://localhost:12345/_apps/script/nilnul.js">
+
+	</script>
+
+	<script src="http://localhost:12345/_apps/script/nilnul.string.js">
+
+	</script>
+
+	<script src="http://localhost:12345/_apps/script/nilnul.cookie.js">
+
+	</script>
+
+
+
+	<script src="http://localhost:12345/_apps/script/nilnul.ctrl.js">
+
+	</script>
+	<script src="http://localhost:12345/_apps/script/nilnul.event.js">
+
+	</script>
+	<script src="http://localhost:12345/_apps/script/nilnul.num.js">
+
+	</script>
+
+
+
+	<% #endif %>
+</head>
+<body>
+	<div style="clear: both; padding: 0px;">
+
+		<div style="padding: 1em;">
+
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+
+		</div>
+	</div>
+	<script>
+		(function () {
+
+		})(
+
+		);
+	</script>
+
+
+</body>
+
+</html>

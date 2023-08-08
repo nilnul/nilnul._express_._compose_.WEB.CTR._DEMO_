@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"  %>
+
+<%@ Register Src="~/cleanTable/_pureJs/_master/Script.ascx" TagPrefix="uc1" TagName="Script" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <%-- <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        copy your table here
+        </asp:ContentPlaceHolder>
+	<uc1:Script runat="server" id="Script" />
+</body>
+</html>
